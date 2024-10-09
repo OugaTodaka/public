@@ -2,15 +2,27 @@
     margin: 0;
     padding: 0;
 }
-#main{
-    margin: 10px;
+.main{
     text-align: center;
+    width: 50%;
+    margin: 10px;
+}
+.chat{
+    border: 3px solid black;
 }
 ul{
+    height: auto;
     list-style: none;
-    border: 2px solid black;
 }
 li{
-    margin: 3px;
-    border: 1px solid gray;
+    width: 90%;
+    padding: 5%;
+}
+#system{
+    text-align: left;
+    background-color: beige;
+}
+#user{
+    text-align: right;
+    background-color: darkgrey;
 }
