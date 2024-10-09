@@ -1,0 +1,20 @@
+{% extends "main/base.html" %}
+{% block title %}chat{% endblock %}
+{% block contents %}
+<div id="main">
+    <h3>レシピチャット</h3>
+    <ul>
+    {% for chat in object_list %}
+    {% if chat.is_system %}
+    <li id="left">
+    {% else %}
+    <li id="right">
+    {% endif %}
+        <p>{{ chat.detail }}</p>
+        <p>{{ chat.link }}</p>
+        <p>{{ chat.send_at }}</p>
+    </li>
+    {% endfor %}
+    </ul>
+    </div>
+{% endblock %}
