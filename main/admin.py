@@ -1,5 +1,4 @@
 from django.contrib import admin
-from .models import Chat,Favorite
+from .models import Chat
 
 admin.site.register(Chat)
-admin.site.register(Favorite)

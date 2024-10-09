@@ -15,13 +15,13 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Chat',
+            name='Favorite',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('detail', models.CharField(blank=True, max_length=255, null=True)),
-                ('link', models.CharField(blank=True, max_length=255, null=True)),
-                ('is_system', models.BooleanField(default=False)),
-                ('send_at', models.DateTimeField()),
+                ('title', models.CharField(max_length=255)),
+                ('url', models.CharField(max_length=255)),
+                ('favo_at', models.DateTimeField()),
+                ('is_delete', models.BooleanField(default=False)),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),
