@@ -15,8 +15,8 @@ ul{
     list-style: none;
 }
 li{
-    width: 90%;
-    padding: 5%;
+    width: 96%;
+    padding: 3px 2%;
 }
 #system{
     text-align: left;

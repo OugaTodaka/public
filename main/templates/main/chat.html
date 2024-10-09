@@ -8,14 +8,11 @@
     {% for chat in object_list %}
     {% if chat.is_system %}
     <li id="system">
-    <div>
-        <p>しすてむ：
     {% else %}
     <li id="user">
-    <div>
-        <p>あなた：
     {% endif %}
-           {{ chat.detail }}</p>
+    <div>
+        <p>{{ chat.detail }}</p>
         <p>{{ chat.link }}</p>
         <p>{{ chat.send_at }}</p>
     </div>
