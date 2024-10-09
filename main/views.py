@@ -1,7 +1,7 @@
 from typing import Any
 from django.db.models.query import QuerySet
 from django.views.generic import ListView
-from .models import Chat,Favorite
+from .models import Chat
 
 class ChatView(ListView):
     template_name = "main/chat.html"
