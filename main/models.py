@@ -10,4 +10,3 @@ class Chat(models.Model):
     send_at = models.DateTimeField()
 =======
     send_at = models.DateTimeField()
->>>>>>> 395cf7dcb8b67f9b629bad40be207c0b1f4c92e8
