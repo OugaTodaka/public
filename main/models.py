@@ -6,4 +6,8 @@ class Chat(models.Model):
     detail = models.CharField(max_length=255,blank=True,null=True)
     link = models.CharField(max_length=255,blank=True,null=True)
     is_system = models.BooleanField(default=False)
+<<<<<<< HEAD
     send_at = models.DateTimeField()
+=======
+    send_at = models.DateTimeField()
+>>>>>>> 395cf7dcb8b67f9b629bad40be207c0b1f4c92e8
